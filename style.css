@@ -106,7 +106,7 @@ header{
 }
 .productDetails{
     position: relative;
-    top: 80px;
+    top: 10px;
 }
 .product-header{
     font-size: 16px;
@@ -133,7 +133,7 @@ header{
     height: 243px;
     position: relative;
     bottom: 0px;
-    top: 50px;
+    top: 0px;
     left: 40px;
 }
 .product-image img{
