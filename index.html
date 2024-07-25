@@ -8,8 +8,8 @@
     <style type="text/css">
         .popup{
             position: fixed;
-            z-index: 200;
-            top: 250px;
+            /* z-index: 99; */
+            top: 280px;
             left: 50%;
             transform: translate(-50%,-50%);
             width: 600px;
@@ -30,7 +30,7 @@
         .popup-close-btn{
             position: relative;
             left: 210px;
-            bottom: 15px;
+            bottom: 0px;
         }
         .popup.active{
             visibility: visible;
@@ -44,7 +44,7 @@
         @media only screen and (min-width: 768px){
             .popup{
             position: fixed;
-            z-index: 200;
+            /* z-index: 200; */
             top: 300px;
             left: 50%;
             transform: translate(-50%,-50%);
@@ -54,7 +54,8 @@
             background: white;
         }
         .form-edit{
-            margin-left: 30px;
+            width: 100%;
+            margin-left: 0px;
         }
         .form-edit{
             width: 100%;
@@ -64,27 +65,32 @@
         }
         .popup-close-btn{
             position: relative;
-            left: 350px;
-            bottom: 19px;
+            left: 450px;
+            bottom: 0px;
         }
         }   
         /* Desktop */
       @media only screen and (min-width: 1200px){
         .popup{
             position: fixed;
-            z-index: 200;
+            /* z-index: 200; */
             top: 350px;
             left: 50%;
             transform: translate(-50%,-50%);
-            width: 600px;
+            width: 800px;
+            height: 700px;
             padding: 50px;
             box-shadow: 0 5px 30px rgba(0,0,0,.30);
             background: white;
         }
+        .form-edit{
+            height: 500px;
+            margin-left: 10px;
+        }
         .popup-close-btn{
             position: relative;
-            left: 400px;
-            bottom: 19px;
+            left: 600px;
+            bottom: 0px;
         }
       }
 
@@ -336,7 +342,7 @@
                   <!-- /Testimonials -->
 
      <script src="index.js"></script>
-    <script type="text/javascript">
+     <script type="text/javascript">
         window.omnisend = window.omnisend || [];
         omnisend.push(["accountID", "66a1d9a842505d1e2acbe09e"]);
         omnisend.push(["track", "$pageViewed"]);
@@ -345,6 +351,6 @@
         e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
         var t=document.getElementsByTagName("script")[0];
         t.parentNode.insertBefore(e,t)}();
-</script>
+</script>                  
 </body>
 </html>

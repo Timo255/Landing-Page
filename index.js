@@ -31,10 +31,16 @@ navLink.forEach(nLink =>{
 
 openPopUp.addEventListener("click", ()=>{
     var popup = document.querySelector('.popup');
+    var btnOpen = document.querySelector('#topOffer-btn')
+    btnOpen.style.zIndex = '0'
     popup.classList.add('active')
+    popup.style.zIndex = '100'
 })
 
 closePopUp.addEventListener("click", ()=>{
     var popup = document.querySelector('.popup');
+    var btnOpen = document.querySelector('#topOffer-btn')
+    btnOpen.style.zIndex = '0'
     popup.classList.remove('active')
+    popup.style.zIndex = '0'
 })

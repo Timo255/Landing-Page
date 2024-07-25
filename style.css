@@ -13,7 +13,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-y: hidden; */
     background-color: var(--background-color);
 }
 header{
@@ -96,11 +96,13 @@ header{
     /* background-color: blue; */
 }
 .Detail-imd{
+    width: 100%;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    bottom: 0px;
+    bottom: 200px;
     /* top: 190px; */
     /* background-color: yellow; */
 }
@@ -127,6 +129,7 @@ header{
     position: relative;
     top: 280px;
     left: 50px;
+    z-index: 100;
 }
 .product-image{
     width: 206px;
@@ -352,6 +355,7 @@ header{
 }
 .Detail-imd{
     width: 100%;
+    height: 100%;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
