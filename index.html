@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Landind page</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q40GHR26N1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Q40GHR26N1');
+    </script>
     <style type="text/css">
         .popup{
             position: fixed;
@@ -342,6 +351,14 @@
                   <!-- /Testimonials -->
 
      <script src="index.js"></script>
+    <script>
+    document.getElementById("topOffer-btn").addEventListener("click", function() {
+      gtag('event', 'claim_deal', {
+        event_category: 'engagement',
+        event_label: 'Claim Deal'
+      });
+    });
+    </script>
      <script type="text/javascript">
         window.omnisend = window.omnisend || [];
         omnisend.push(["accountID", "66a1d9a842505d1e2acbe09e"]);
