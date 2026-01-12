@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Landind page</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q40GHR26N1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Q40GHR26N1');
+    </script>
+    <meta name="google-site-verification" content="Ir7tndzTezAiCir40iNAVwg5FO7Fa3di5dDKFNer6is" />
     <style type="text/css">
         .popup{
             position: fixed;
@@ -71,9 +81,6 @@
         }   
         /* Desktop */
       @media only screen and (min-width: 1200px){
-         .popup{
-             height: 500px;
-         }
         .popup{
             position: fixed;
             /* z-index: 200; */
@@ -93,11 +100,9 @@
         .popup-close-btn{
             position: relative;
             left: 600px;
-            left: 400px;
             bottom: 0px;
-            top: 10px;
         }
-        }
+      }
 
 </style>
 </head>
@@ -346,6 +351,14 @@
                   <!-- /Testimonials -->
 
      <script src="index.js"></script>
+    <script>
+    document.getElementById("topOffer-btn").addEventListener("click", function() {
+      gtag('event', 'claim_deal', {
+        event_category: 'engagement',
+        event_label: 'Claim Deal'
+      });
+    });
+    </script>
      <script type="text/javascript">
         window.omnisend = window.omnisend || [];
         omnisend.push(["accountID", "66a1d9a842505d1e2acbe09e"]);
